@@ -8,7 +8,7 @@ end
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
   histo = {}
-  a_string.delete(' ').downcase.each_char.
+  a_string.downcase.each_char.
      map { |x| !histo[x] ? histo[x]=1 : histo[x] = histo[x]+1 }
   histo
 end
@@ -49,6 +49,6 @@ end
 # Uncomment a line to test the function you are developing
 # Type "ruby functions.rb" at command line (Konsole) to run the script
 # puts reverse([3,6,'dog']).inspect
-# puts histogram('The Quick brown fox').inspect
+ puts histogram('The Quick brown fox').inspect
 # puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
- puts fizzbuzz.join("\n")
+# puts fizzbuzz.join("\n")
